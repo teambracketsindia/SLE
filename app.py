@@ -7,7 +7,7 @@ import shap
 import matplotlib.pyplot as plt
 
 # Load the model, label encoder, and unique values
-output_dir = 'output'
+output_dir = './model/'
 model = joblib.load(os.path.join(output_dir, 'model.joblib'))
 le = joblib.load(os.path.join(output_dir, 'label_encoder.joblib'))
 unique_values = joblib.load(os.path.join(output_dir, 'unique_values.joblib'))
